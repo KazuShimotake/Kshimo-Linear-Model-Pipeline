@@ -175,23 +175,4 @@ for i in range(1,5):
     best_theta = optimal_theta(Xproc,y)
     print("loss(best_theta,Xproc,y) with",i,"features extracted:",loss(best_theta,Xproc,y))
 
-print("")
-print("")
-print("My pipeline is generally set up to do preprocessing, which consists of subtracting off the mean,")
-print("normalizing using the standard deviation, applying PCA using a given number of components,")
-print("and extracting 1-4 features that get appended to the end.")
-print("It then uses linear regression using the direct solution")
-print("to get the optimal theta for the loss function.")
-print("Then it goes through the range of PCA components that can be used and checking what")
-print("the loss is for each number of components used. It also tests varying the number")
-print("of features extracted and checking what the resulting loss from doing so i")
-print("")
-print("Both increasing the number of components used in PCA and")
-print("increasing the number of features extracted generally also decreased")
-print("the loss between the predictions that come from the theta and the actual values.")
-print("Also, the breast cancer dataset has a component at the end")
-print("that completely throws off the loss function for varying PCA components")
-print("and varying features extracted.")
-print("")
-
 
