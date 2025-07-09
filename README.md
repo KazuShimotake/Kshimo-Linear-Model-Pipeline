@@ -1,2 +1,4 @@
 # Kshimo-Linear-Model-Pipeline
-Implementation of a linear model pipeline
+Implementation of a linear model pipeline. My pipeline is generally set up to do preprocessing, which consists of subtracting off the mean, normalizing using the standard deviation, applying PCA using a given number of components, and extracting 1-4 features that get appended to the end. It then uses linear regression using the direct solution to get the optimal theta for the loss function. Then it goes through the range of PCA components that can be used and checking what the loss is for each number of components used. It also tests varying the number of features extracted and checking what the resulting loss from doing so. 
+
+Both increasing the number of components used in PCA and increasing the number of features extracted generally also decreased the loss between the predictions that come from the theta and the actual values. Also, the breast cancer dataset has a component at the end that completely throws off the loss function for varying PCA components and varying features extracted.
